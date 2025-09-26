@@ -1,11 +1,14 @@
-
+import { useState } from "react"
+import { currencies } from "../currencies";
+import { Result } from "./Result";
+import "./style.css";
 
 
 
 
 export const Form = ({ calculateResult, result }) => {
-    cosnt[currency, setCurrency] = useState(currencies[0].short);
-    cosnt[amount, setAmount] = useState("");
+    const [currency, setCurrency] = useState(currencies[0].short);
+    const [amount, setAmount] = useState("");
 
     const onSubmit = (event) => {
         event.preventDefault();
@@ -26,10 +29,10 @@ export const Form = ({ calculateResult, result }) => {
                         value={amount}
                         onChange={
                             ({ target }) => (
-                                steAmount(target.value)
+                                setAmount(target.value)
                             )
                         }
-                        placecholder="Wpisz kwotę w zł"
+                        placeholder="Wpisz kwotę w zł"
                         className="form__field"
                         type="number"
                         required
@@ -66,7 +69,7 @@ export const Form = ({ calculateResult, result }) => {
                 Kursy pochodzą ze strony mbanku.
             </p>
 
-            <Result result={result} />
+            <result result={result} />
         </form>
     );
 };
