@@ -31,7 +31,7 @@ This application allows you to calculate various currency rates by converting PL
 
 ## visit the website
 
-Visit my website here: (https://maciekinit.github.io/Currency-converter/index.html)
+Visit my website here:[Demo](https://maciekinit.github.io/currency-converter-react/)
 
 # Getting Started with Create React App
 
