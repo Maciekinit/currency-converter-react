@@ -1,3 +1,4 @@
+
 import { useState } from "react"
 import { currencies } from "../currencies";
 import { Result } from "./Result";
@@ -20,10 +21,11 @@ export const Form = ({ calculateResult, result }) => {
             <h1 className="form__header">
                 Przelicznik walut
             </h1>
+            <p>Wymagane pola oznaczone są *.</p>
             <p>
                 <label>
                     <span className="form__labelText">
-                        Kwota w zł:
+                        Kwota w zł*:
                     </span>
                     <input
                         value={amount}
@@ -43,7 +45,7 @@ export const Form = ({ calculateResult, result }) => {
             <p>
                 <label>
                     <span className="form__labelText">
-                        Waluta:
+                        Waluta*:
                     </span>
                     <select
                         className="form__field"
@@ -66,10 +68,10 @@ export const Form = ({ calculateResult, result }) => {
             </p>
 
             <p className="form__info">
-                Kursy pochodzą ze strony mbanku.
+                Kursy pochodzą ze strony mbanku z dnia 2024-09-27.
             </p>
 
-            <result result={result} />
+            <Result result={result} />
         </form>
     );
 };

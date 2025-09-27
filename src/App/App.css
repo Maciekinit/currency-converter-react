@@ -1,7 +1,7 @@
 .app {
-  flex-basis: 700px;
+  flex-basis: 800px;
   margin: 20px;
-  padding: 40px;
+  padding: 30px;
   background: #ccc;
   border-radius: 20px;
   box-shadow: 0 0 30px rgb(0, 0, 0);
