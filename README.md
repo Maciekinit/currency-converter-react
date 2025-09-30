@@ -14,20 +14,21 @@ Hi ! I present a simple currency converter.
 
 ## Description
 
-This application allows you to calculate various currency rates by converting PLN to CHF (Swiss Franc), EUR (European Union), GBP (Great Britain), USD (USA). It is convenient for the user to use, works smoothly and beneficially.
+This simple and powerful web app was built in React to allow users to quickly convert PLN amounts to selected foreign currencies: Swiss franc (CHF), euro (EUR), pound sterling (GBP), and US dollar (USD). It's very user-friendly.
 
 ## How to use
 
 1. Enter the amount in PLN.
 2. Select currency (for example GBP/EUR)
 3. Click the Calculate button.
+4. The app will display the converted value.
 
-## Technologies used in the project
+## Technologies Used in the Project 🛠️
 
-- HTML language
-- BEM - Block Element Modifier
-- CSS
-- ES6+ JavaScript
+- React: A library for building user interfaces.
+- Styled Components: For defining component styles, ensuring dynamic and easy theme management.
+- Hooks: Use custom hooks (e.g. useCurrentDate) to manage the logic of retrieving data and the current time.
+- CSS Grid / Flexbox: For responsive element arrangement
 
 ## visit the website
 
