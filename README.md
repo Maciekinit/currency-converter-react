@@ -14,7 +14,7 @@ Hi ! I present a simple currency converter.
 
 ## Description
 
-This simple and powerful web app was built in React to allow users to quickly convert PLN amounts to selected foreign currencies: Swiss franc (CHF), euro (EUR), pound sterling (GBP), and US dollar (USD). It's very user-friendly.
+This simple and powerful web app was built in React to allow users to quickly convert PLN amounts to selected foreign currencies: Swiss franc (CHF), euro (EUR), pound sterling (GBP), and US dollar (USD). It's very user-friendly.The project is constantly updated.
 
 ## How to use
 
