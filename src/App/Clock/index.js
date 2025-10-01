@@ -10,14 +10,8 @@ const formatDate = (date) => date.toLocaleString(undefined, {
     month: "long"
 });
 
-export const Clock = () => {
-    const date = useCurrentDate();
+export const StyledClock = () => {
+  const date = useCurrentDate();
 
-    return (
-        <Wrapper>
-            Dzisiaj jest dzień
-            {" "}
-            {formatDate(date)}
-        </Wrapper>
-    )
+  return <Wrapper>Dzisiaj jest dzień {formatDate(date)}</Wrapper>;
 };
