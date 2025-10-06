@@ -9,7 +9,7 @@ export const useRatesData = () => {
     useEffect(() => {
         const fetchRates = async () => {
             try {
-                const apiUrl = "https://api.currencyapi.com/v3/latest?apikey=cur_live_MMheuIaylzRgDGXNyBaKBRp5RBdATE9NMBO9rxAU&currencies=EUR,USD,CHF,GBP&base_currency=EUR";
+                const apiUrl = "https://api.currencyapi.com/v3/latest?apikey=cur_live_MMheuIaylzRgDGXNyBaKBRp5RBdATE9NMBO9rxAU&currencies=EUR,USD,CHF,GBP&base_currency=PLN";
 
                 const response = await axios.get(apiUrl);
 
