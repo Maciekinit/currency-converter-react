@@ -14,7 +14,7 @@ Hi ! I present a simple currency converter.
 
 ## Description
 
-This simple and powerful web app was built in React to allow users to quickly convert PLN amounts to selected foreign currencies: Swiss franc (CHF), euro (EUR), pound sterling (GBP), and US dollar (USD). It's very user-friendly.The project is constantly updated.
+This simple and powerful web app was built in React to allow users to quickly convert PLN amounts to selected foreign currencies: Swiss franc (CHF), euro (EUR), pound sterling (GBP), and US dollar (USD). It's very user-friendly.The project is constantly updated.The calculator allows you to convert values ​​between different currencies based on current rates from an external API.
 
 ## How to use
 
@@ -28,6 +28,7 @@ This simple and powerful web app was built in React to allow users to quickly co
 - React: A library for building user interfaces.
 - Styled Components: For defining component styles, ensuring dynamic and easy theme management.
 - Hooks: Use custom hooks (e.g. useCurrentDate) to manage the logic of retrieving data and the current time.
+- Currency calculator uses an external API to retrieve real-time exchange rates.
 - CSS Grid / Flexbox: For responsive element arrangement
 
 ## visit the website
