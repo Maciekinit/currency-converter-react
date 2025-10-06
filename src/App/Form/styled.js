@@ -43,3 +43,11 @@ export const Info = styled.p`
   text-align: center;
   color: ${({ theme }) => theme.color.emperor};
 `;
+
+export const Loading = styled.p`
+color: ${({ theme }) => theme.color.green};
+`;
+
+export const Failure = styled.p`
+color: ${({ theme }) => theme.color.red};
+`;
