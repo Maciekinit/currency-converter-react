@@ -45,9 +45,9 @@ export const Info = styled.p`
 `;
 
 export const Loading = styled.p`
-color: ${({ theme }) => theme.color.green};
+  color: ${({ theme }) => theme.color.green};
 `;
 
 export const Failure = styled.p`
-color: ${({ theme }) => theme.color.red};
+  color: ${({ theme }) => theme.color.red};
 `;
