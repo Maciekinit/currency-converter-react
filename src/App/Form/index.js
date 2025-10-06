@@ -88,7 +88,7 @@ export const Form = () => {
                                     <Button>Przelicz!</Button>
                                 </p>
                                 <Info>
-                                    Kursy pobierane są w czasie teraźniejszym <a href="https://currencyapi.com">currencyapi.com</a>
+                                    Kursy pobierane są w czasie teraźniejszym z <a href="https://currencyapi.com">currencyapi.com</a>
                                 </Info>
 
                                 <Result result={result} />
