@@ -14,10 +14,10 @@ import { useRatesData } from "./useRatesData";
 
 export const Form = () => {
     const [result, setResult] = useState();
-    const retesData = useRatesData();
+    const ratesData = useRatesData();
 
     const calculateResult = (currency, amount) => {
-        const rate = retesData.rates[currency];
+        const rate = ratesData.rates[currency].value;
 
         setResult({
             sourceAmount: +amount,
@@ -39,14 +39,14 @@ export const Form = () => {
             <Header>
                 Przelicznik walut
             </Header>
-            {retesData.state === "loading"
+            {ratesData.state === "loading"
                 ? (
                     <Loading>
                         Ładowanie kursów walut...
                     </Loading>
                 )
                 : (
-                    retesData.state === "error" ? (
+                    ratesData.state === "error" ? (
                         <Failure>
                             Coś poszło nie tak. Spróbuj ponownie później.
                         </Failure>
@@ -73,7 +73,7 @@ export const Form = () => {
                                             value={currency}
                                             onChange={({ target }) => setCurrency(target.value)}
                                         >
-                                            {Object.keys(retesData.rates).map(((currency) => (
+                                            {Object.keys(ratesData.rates).map(((currency) => (
                                                 <option
                                                 key={currency}
                                                 value={currency}
@@ -87,9 +87,8 @@ export const Form = () => {
                                 <p>
                                     <Button>Przelicz!</Button>
                                 </p>
-
                                 <Info>
-                                    Kursy są pobierane z Europejskiego Banku Centralnego.
+                                    Kursy pobierane są w czasie teraźniejszym <a href="https://currencyapi.com">currencyapi.com</a>
                                 </Info>
 
                                 <Result result={result} />

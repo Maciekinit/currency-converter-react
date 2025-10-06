@@ -9,23 +9,24 @@ export const useRatesData = () => {
     useEffect(() => {
         const fetchRates = async () => {
             try {
-                const apiUrl = "https://api.currencyapi.com/v3/latest?apikey=cur_live_MMheuIaylzRgDGXNyBaKBRp5RBdATE9NMBO9rxAU&currencies=EUR%2CUSD%2CCHF%2CGBP&base_currency=PLN";
+                const apiUrl = "https://api.currencyapi.com/v3/latest?apikey=cur_live_MMheuIaylzRgDGXNyBaKBRp5RBdATE9NMBO9rxAU&currencies=EUR,USD,CHF,GBP&base_currency=EUR";
 
-                const response = await axios(apiUrl);
+                const response = await axios.get(apiUrl);
 
-                if (!response.status !== 200) {
+                if (response.status !== 200) {
                     throw new Error(`HTTP Error: ${response.status}`);
                 }
 
-                const { rates, date } = await response.json();
+                const { data } = response;
 
                 setRatesData({
                     state: "success",
-                    rates,
-                    date,
+                    rates: data.data,
+                    date: data.meta.last_updated_at,
                 });
 
-            } catch {
+            } catch (error) {
+                console.error("Błąd pobierania danych:", error);
                 setRatesData({
                     state: "error",
                 });
