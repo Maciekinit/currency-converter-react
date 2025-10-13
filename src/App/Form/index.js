@@ -54,7 +54,7 @@ export const Form = () => {
                         <>
                                 <p>
                                     < label >
-                                        <LabelText> Kwota w zł*:</LabelText>
+                                        <LabelText> Kwota w zł:</LabelText>
                                         <Field
                                             value={amount}
                                             onChange={({ target }) => setAmount(target.value)}
